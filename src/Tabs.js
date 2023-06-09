@@ -8,12 +8,12 @@ const Tabs = ({ tabs }) => {
   };
 
   return (
-    <div className="w-full">
+    <div className="ml-3">
       <div className="w-full flex">
         {tabs.map((tab) => (
           <button
             key={tab.id}
-            className={`px-4 py-2 mr-2 mt-4 ml-4 font-medium ${
+            className={`px-4 py-2 mr-2 mt-4 ml-4 font-medium  hover:shadow-2xl hover:-translate-x-1 hover:scale-105 transition-all duration-300 ${
               activeTab === tab.id ? 'bg-blue-500 rounded-lg text-white' : ' bg-gray-200 rounded-lg text-gray-600'
             }`}
             onClick={() => handleTabClick(tab.id)}
